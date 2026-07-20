@@ -1,10 +1,10 @@
 :root {
-  --color-blue-universe: #010C53;
-  --color-deep-blue: #011676;
-  --color-tech-blue: #0429BC;
-  --color-dev-blue: #1F53E5;
-  --color-new-black: #0D0D0D;
-  --color-white-snow: #F4F5F6;
+  --color-blue-universe: #210024;
+  --color-deep-blue: #4D0054;
+  --color-tech-blue: #9E00AD;
+  --color-dev-blue: #E000FF;
+  --color-new-black: #0E080F;
+  --color-white-snow: #FAF5FA;
 }
 
 * {
