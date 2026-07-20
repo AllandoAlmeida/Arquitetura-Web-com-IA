@@ -12,7 +12,7 @@ const API_BASE_URL = "http://localhost:8000";
 async function preencherFigurinhas() {
     try {
         // 1. Busca as figurinhas disponíveis na API
-        const response = await fetch(`${API_BASE_URL}/figurinhas`);
+        const response = await fetch(`${API_BASE_URL}/images`);
 
         if (!response.ok) {
             throw new Error(`Erro na API: ${response.status} ${response.statusText}`);
@@ -20,6 +20,7 @@ async function preencherFigurinhas() {
 
         // 2. Converte o JSON em array JavaScript
         const figurinhas = await response.json();
+        console.log(figurinhas);
 
         // 3. Cria um Map de id → figurinha para lookup rápido
         //    Ex: 1 → { id: 1, nome: "Alan Turing", imagem_url: "/imgs/01-alan-turing.jpg" }
@@ -39,6 +40,7 @@ async function preencherFigurinhas() {
 
             // A figurinha existe: insere a imagem
             const figurinha = porId.get(id);
+            console.log(figurinha)
 
             const img = document.createElement("img");
             img.src = `${API_BASE_URL}${figurinha.imagem_url}`;
