@@ -209,7 +209,7 @@ No dicionário de cada item, altere:
 para:
 
 ```python
-"imagem_url": f"/figurinhas/{id_figura}/imagem"
+"imagem_url": f"/images/{id_figura}/imagem"
 ```
 
 A estrutura de cada item deve continuar assim:
@@ -219,7 +219,7 @@ A estrutura de cada item deve continuar assim:
     "id": id_figura,
     "nome": nome,
     "categoria": CATEGORIA,
-    "imagem_url": f"/figurinhas/{id_figura}/imagem"
+    "imagem_url": f"/images/{id_figura}/imagem"
 }
 ```
 
